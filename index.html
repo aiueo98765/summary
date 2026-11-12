@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>合格手帳</title>
+<meta name="description" content="難関高校受験のための カウントダウン・タスク・時間割・学習ログ">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c8432b'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'%3E%E5%90%88%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#home" aria-label="合格手帳 ホーム"><span class="brand-mark" aria-hidden="true">合</span><span class="brand-t">合格手帳</span></a>
+    <nav class="tabs" id="tabs" aria-label="メニュー">
+      <a href="#home" data-view="home">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 10.5 12 3.5l8.5 7V20a1 1 0 0 1-1 1H15v-6H9v6H4.5a1 1 0 0 1-1-1z"/></svg>
+        <span>ホーム</span></a>
+      <a href="#plan" data-view="plan">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M8.5 15l2 2 4-4"/></svg>
+        <span>計画</span></a>
+      <a href="#log" data-view="log">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 20V11M10 20V5M15 20v-6M20 20V9M3 20.5h18"/></svg>
+        <span>記録</span></a>
+      <a href="#settings" data-view="settings">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h9M17 7h3M4 12h3M11 12h9M4 17h11M19 17h1"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+        <span>設定</span></a>
+    </nav>
+    <div class="top-count" id="topCount"></div>
+  </div>
+</header>
+
+<main id="main"></main>
+
+<div id="timerPill" class="timer-pill" hidden></div>
+<div id="tip" class="tip" hidden></div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<dialog id="dlg"></dialog>
+
+<script src="js/store.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
